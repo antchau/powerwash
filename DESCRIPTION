@@ -1,0 +1,18 @@
+Package: powerwash
+Type: Package
+Title: Check and Inspect your Data before Downstream Analysis
+Version: 0.1.0
+Authors@R: person("Anthony", "Chau", email = "achau713@gmail.com",
+           role = c("aut", "cre"))
+Description: An opioniated standard for data quality. Check the 
+  accuracy, completeness, consistency, and realibility of your data. 
+  The goal is to provide a data-agnostic approach to clean, test, and 
+  document your data assets. Built to be flexible and extensible, 
+  apply your quality audits throughout the entire data pipeline. 
+Depends: R (>= 4.0.1)
+License: AGPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Suggests: 
+    testthat
