@@ -2,7 +2,7 @@
 
 #' Verify that values are within a range
 #'
-#' \code{verify_number_rangge} checks that all the values in a vector are within
+#' \code{verify_number_rangge} checks that all values in a vector are within
 #' the specified range
 #'
 #' @param x Numeric vector.
@@ -15,8 +15,10 @@
 #' verify_number_range(c(1, 12, 10000), lower = 1, upper = 100)
 #' verify_number_range(c(-50, 12, 10000), lower = 1, upper = 100)
 verify_number_range <- function(x, lower, upper){
-  minimum <- min(x)
-  maximum <- max(x)
 
-  return(minimum >= lower && maximum <= upper)
+
+  return(all(x >= lower) && all(x <= upper))
 }
+
+
+
