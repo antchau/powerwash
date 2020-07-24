@@ -16,7 +16,6 @@
 #' verify_number_range(c(-50, 12, 10000), lower = 1, upper = 100)
 verify_number_range <- function(x, lower, upper){
 
-
   return(all(x >= lower) && all(x <= upper))
 }
 
